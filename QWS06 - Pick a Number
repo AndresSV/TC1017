@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main(){
+
+	int attempts = 0;
+	int random = 0;
+	int x = 0;
+	srand(time(NULL));
+	random = rand() % 100 + 1;
+
+	while(x!=random){
+
+		cout << "Give me a number between 1 and 100." << endl;
+
+		cin >> x;
+
+		if(x > random){
+			cout << "Your number is bigger. " << endl;
+		}
+		else if (x < random){
+			cout << "Your number is smaller. " << endl;
+		}
+
+	attempts++;
+
+	}
+
+	cout << "Congratulations!" << endl;
+	cout << "Attempts needed: " << attempts << "." << endl;
+return 0;
+
+}
