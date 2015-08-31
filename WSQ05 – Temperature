@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+  double inA = 0;
+
+  double celsius = 0;
+
+  cout << "Insert the value of Farenheit to convert to Celsius. " << endl;
+  cin >> inA;
+  celsius = (((inA-32)/9)*5);
+  cout << "Celsius value is: " << celsius << endl;
+
+  return 0;
+
+}
