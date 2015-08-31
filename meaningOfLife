@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+	long x = 0, y = 0;
+
+	cout << "Give me one number!" << endl;
+	cin >> x;
+	cout << "Give me another number!" << endl;
+	cin >> y;
+	
+	cout << "The sum of x + y: " << x+y <<endl;
+	cout << "The diference between x & y: " << x-y << endl;
+	cout << "The product of x*y: " << x*y << endl;
+	cout << "The integer division of x/y: " << x/y << endl;
+	cout << "The remainder of x/y: " << x%y << endl;
+
+return 0;
+
+}
