@@ -17,7 +17,7 @@ void stars(int iStars){
 }
 
 int main(){
-
+  cout << superpower(3,4);
   starts(5);
-
+  return 0;
 }
