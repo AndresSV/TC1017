@@ -22,21 +22,26 @@ float calculateE(float decimal){
   return e;
 }
 
-void checkBanana(string filename){
+int checkBanana(string filename){
 
-string bananas;
-float amountBananas;
-int counter=0;
+  string iLine;
+  double amountBananas;
+  int counter=0;
 
-ifstream myfile(filename.c_str());
+  ifstream myfile();
 
-myfile.is_open();
+  myfile.is_open();
 
-while(getline(myfile,bananas)){
-  //bananas finder;
-}
+  while(getline(myfile,iLine)){
+    string banana = "banana";
+    transform(iLine.begin(), iLine.end(), iLine.begin(), :: tolower);
+    if(iLine.find(banana)!=string::npos){
+      amountBananas++;
+    }
 
-cout<<"The total amount of bananas is: " << amountBananas << endl;
+  }
+
+  return amountBananas;
 
 }
 
