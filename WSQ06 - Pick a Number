@@ -18,10 +18,10 @@ int main(){
 		cin >> x;
 
 		if(x > random){
-			cout << "Your number is bigger. " << endl;
+			cout << "Your number is bigger. Try again." << endl;
 		}
 		else if (x < random){
-			cout << "Your number is smaller. " << endl;
+			cout << "Your number is smaller. Try again." << endl;
 		}
 
 	attempts++;
